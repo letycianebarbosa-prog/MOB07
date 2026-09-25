@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MeuSite</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- 1 — BOAS-VINDAS -->
+    <section class="boas-vindas">
+
+        <div class="bv-texto">
+            <span class="bv-tag">BEM-VINDO</span>
+
+            <h1>
+                Olá! Que bom te ver por aqui 👋
+            </h1>
+
+            <p>
+                Somos uma equipe apaixonada por criar soluções
+                digitais que fazem a diferença.
+            </p>
+
+            <button
+                class="btn-primario"
+                onclick="document.getElementById('precos').scrollIntoView({behavior:'smooth'})"
+            >
+                Conheça nossos planos
+            </button>
+        </div>
+
+        <div class="bv-imagem">
+            <img
+                src="https://picsum.photos/id/1005/500/400"
+                alt="Boas-vindas"
+            >
+        </div>
+
+    </section>
+
+
+    <!-- 2 — SERVIÇOS -->
+    <section class="servicos">
+
+        <h2>Nossos Serviços</h2>
+
+        <div class="servicos-grid">
+
+            <div class="servico">
+                <div class="servico-icone">🎨</div>
+
+                <h3>Design Gráfico</h3>
+
+                <p>
+                    Criação de identidade visual, logos e materiais.
+                </p>
+            </div>
+
+            <div class="servico">
+                <div class="servico-icone">💻</div>
+
+                <h3>Desenvolvimento Web</h3>
+
+                <p>
+                    Sites e aplicações sob medida para seu negócio.
+                </p>
+            </div>
+
+            <div class="servico">
+                <div class="servico-icone">📈</div>
+
+                <h3>Marketing Digital</h3>
+
+                <p>
+                    Estratégias de tráfego, redes sociais e SEO.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 3 — ESTATÍSTICAS -->
+    <section class="estatisticas">
+
+        <div class="estatistica">
+            <div class="numero">+10.000</div>
+            <p>Clientes</p>
+        </div>
+
+        <div class="estatistica">
+            <div class="numero">+5.000</div>
+            <p>Projetos entregues</p>
+        </div>
+
+        <div class="estatistica">
+            <div class="numero">98%</div>
+            <p>Satisfação</p>
+        </div>
+
+        <div class="estatistica">
+            <div class="numero">10+</div>
+            <p>Anos de mercado</p>
+        </div>
+
+    </section>
+
+
+    <!-- 4 — PLANOS E PREÇOS -->
+    <section class="precos" id="precos">
+
+        <h2>Planos e Preços</h2>
+
+        <p class="precos-subtitulo">
+            Escolha o plano ideal para você.
+        </p>
+
+        <div class="precos-grid">
+
+            <div class="plano">
+
+                <h3>Básico</h3>
+
+                <div class="plano-preco">
+                    R$ 19<span>/mês</span>
+                </div>
+
+                <ul>
+                    <li>✅ 5 projetos</li>
+                    <li>✅ Suporte por e-mail</li>
+                    <li>❌ Relatórios avançados</li>
+                </ul>
+
+                <button
+                    class="btn-plano"
+                    onclick="irParaCadastro('Básico - R$ 19/mês')"
+                >
+                    Assinar
+                </button>
+
+            </div>
+
+
+            <div class="plano destaque">
+
+                <span class="badge">MAIS POPULAR</span>
+
+                <h3>Pro</h3>
+
+                <div class="plano-preco">
+                    R$ 49<span>/mês</span>
+                </div>
+
+                <ul>
+                    <li>✅ 50 projetos</li>
+                    <li>✅ Suporte prioritário</li>
+                    <li>✅ Relatórios avançados</li>
+                </ul>
+
+                <button
+                    class="btn-plano destaque-btn"
+                    onclick="irParaCadastro('Pro - R$ 49/mês')"
+                >
+                    Assinar
+                </button>
+
+            </div>
+
+
+            <div class="plano">
+
+                <h3>Empresa</h3>
+
+                <div class="plano-preco">
+                    R$ 99<span>/mês</span>
+                </div>
+
+                <ul>
+                    <li>✅ Projetos ilimitados</li>
+                    <li>✅ Suporte 24/7</li>
+                    <li>✅ API dedicada</li>
+                </ul>
+
+                <button
+                    class="btn-plano"
+                    onclick="irParaCadastro('Empresa - R$ 99/mês')"
+                >
+                    Assinar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 5 — EQUIPE -->
+    <section class="equipe">
+
+        <h2>Nossa Equipe</h2>
+
+        <p class="subtitulo">
+            Pessoas incríveis por trás dos projetos
+        </p>
+
+        <div class="equipe-grid">
+
+            <div class="membro">
+
+                <img
+                    src="https://i.pravatar.cc/150?img=12"
+                    alt="Ana Silva"
+                >
+
+                <h3>Ana Silva</h3>
+
+                <p>Designer</p>
+
+            </div>
+
+
+            <div class="membro">
+
+                <img
+                    src="https://i.pravatar.cc/150?img=33"
+                    alt="Bruno Costa"
+                >
+
+                <h3>Bruno Costa</h3>
+
+                <p>Desenvolvedor</p>
+
+            </div>
+
+
+            <div class="membro">
+
+                <img
+                    src="https://i.pravatar.cc/150?img=45"
+                    alt="Carla Dias"
+                >
+
+                <h3>Carla Dias</h3>
+
+                <p>Gerente</p>
+
+            </div>
+
+
+            <div class="membro">
+
+                <img
+                    src="https://i.pravatar.cc/150?img=68"
+                    alt="Diego Alves"
+                >
+
+                <h3>Diego Alves</h3>
+
+                <p>Marketing</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 6 — DEPOIMENTOS -->
+    <section class="depoimentos">
+
+        <h2>O que dizem nossos clientes</h2>
+
+        <div class="depoimentos-grid">
+
+            <div class="depoimento">
+
+                <p class="citacao">
+                    "Serviço excelente! Superou minhas expectativas."
+                </p>
+
+                <div class="autor">
+
+                    <img
+                        src="https://i.pravatar.cc/50?img=15"
+                        alt="Roberta"
+                    >
+
+                    <div>
+                        <strong>Roberta L.</strong>
+
+                        <small>
+                            Cliente desde 2020
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="depoimento">
+
+                <p class="citacao">
+                    "Equipe muito atenciosa e profissional. Recomendo!"
+                </p>
+
+                <div class="autor">
+
+                    <img
+                        src="https://i.pravatar.cc/50?img=25"
+                        alt="Marcos"
+                    >
+
+                    <div>
+                        <strong>Marcos P.</strong>
+
+                        <small>
+                            Cliente há 2 anos
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="depoimento">
+
+                <p class="citacao">
+                    "Resultados incríveis. Voltarei a contratar com certeza."
+                </p>
+
+                <div class="autor">
+
+                    <img
+                        src="https://i.pravatar.cc/50?img=52"
+                        alt="Juliana"
+                    >
+
+                    <div>
+                        <strong>Juliana R.</strong>
+
+                        <small>
+                            Cliente novo
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 7 — FALE CONOSCO -->
+    <section class="contato">
+
+        <div class="card-contato">
+
+            <h2>📞 Fale Conosco</h2>
+
+            <p>
+                Responderemos em até 24 horas.
+            </p>
+
+            <div class="linha-campos">
+
+                <div>
+
+                    <label for="nomeContato">
+                        Nome
+                    </label>
+
+                    <input
+                        id="nomeContato"
+                        type="text"
+                        placeholder="Seu nome"
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="emailContato">
+                        E-mail
+                    </label>
+
+                    <input
+                        id="emailContato"
+                        type="email"
+                        placeholder="seu@email.com"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <label for="assuntoContato">
+                Assunto
+            </label>
+
+            <input
+                id="assuntoContato"
+                type="text"
+                placeholder="Sobre o que deseja falar?"
+            >
+
+
+            <label for="mensagemContato">
+                Mensagem
+            </label>
+
+            <textarea
+                id="mensagemContato"
+                rows="5"
+                placeholder="Escreva sua mensagem..."
+            ></textarea>
+
+
+            <button
+                class="btn-enviar"
+                onclick="enviarMensagem()"
+            >
+                ENVIAR MENSAGEM
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- 8 — CTA -->
+    <section class="cta">
+
+        <div class="cta-conteudo">
+
+            <h2>
+                Pronto para começar?
+            </h2>
+
+            <p>
+                Junte-se a mais de 10.000 clientes satisfeitos.
+            </p>
+
+            <button
+                class="btn-cta-acao"
+                onclick="irParaCadastro('Conta grátis')"
+            >
+                Criar conta grátis
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- 9 — CADASTRO -->
+    <section class="cadastro" id="cadastro">
+
+        <div class="card-cadastro">
+
+            <h2>📝 Criar sua conta</h2>
+
+            <p>
+                Preencha os dados abaixo para criar seu cadastro.
+            </p>
+
+
+            <div
+                id="planoEscolhido"
+                class="plano-escolhido"
+            ></div>
+
+
+            <label for="nomeCadastro">
+                Nome
+            </label>
+
+            <input
+                id="nomeCadastro"
+                type="text"
+                placeholder="Seu nome"
+            >
+
+
+            <label for="emailCadastro">
+                E-mail
+            </label>
+
+            <input
+                id="emailCadastro"
+                type="email"
+                placeholder="seu@email.com"
+            >
+
+
+            <label for="senhaCadastro">
+                Senha
+            </label>
+
+            <input
+                id="senhaCadastro"
+                type="password"
+                placeholder="Mínimo 6 caracteres"
+            >
+
+
+            <label for="confirmarSenha">
+                Confirmar senha
+            </label>
+
+            <input
+                id="confirmarSenha"
+                type="password"
+                placeholder="Digite a senha novamente"
+            >
+
+
+            <button
+                class="btn-cadastro"
+                onclick="criarConta()"
+            >
+                CRIAR CONTA
+            </button>
+
+
+            <div
+                id="mensagemCadastro"
+                class="mensagem-cadastro"
+            ></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 10 — FOOTER -->
+    <footer class="footer-simples">
+
+        <div class="footer-conteudo">
+
+            <div class="footer-logo">
+                🚀 MeuSite
+            </div>
+
+            <p>
+                Soluções digitais que conectam marcas e pessoas.
+            </p>
+
+        </div>
+
+
+        <div class="footer-copy">
+            © 2026 MeuSite.
+            Todos os direitos reservados.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
